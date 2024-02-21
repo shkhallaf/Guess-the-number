@@ -8,20 +8,21 @@
   </head>
   <body>
     <header>
-      <button class="floatleft">Again !</button>
+      <button class="floatleft" id="again">Again !</button>
       <p class="floatright">( Between 1 and 20 )</p>
       <h1>Guess My Number !</h1>
     </header>
-    <div >?</div>
+    <div id="realNumber"></div>
 
     <section class="sectionleft">
-      <input type="number" name="num" id="" />
+      <input type="number" name="num" id="guessednumber" min="0" max="20" />
       <button id="check">Check !</button>
     </section>
     <section class="sectionright">
-      <p>Start guessing...</p>
-      <p>💯 Score : <span>20</span></p>
-      <p>🥇 Highscore : <span> 0 </span></p>
+      <p id="hint"></p>
+      <p>💯 Score : <span id="score"> </span></p>
+      <p>🥇 Highscore : <span id="highestscore"> </span></p>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
